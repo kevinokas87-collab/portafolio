@@ -1,0 +1,582 @@
+:root{
+    --color-fondo1: #9BA8AB;
+    --color-fondo2: #F5EFEB;
+    --color-1: #CCD0CF;
+    --color-2: #4A5C6A;
+    --color-primario: #567C8D;
+    --color-secundario: #C8D9E6;
+    --color-hover: #2F4156;
+    --color-texto-primario: #1E293B;
+    --color-texto-secundario: #567C8D
+    
+
+}
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Estilos de PC*/
+
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: var(--color-primario);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px;
+    color: var(--color-texto-primario);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    color: var(--color-hover);
+
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--color-texto-primario);
+}
+
+.hamburguesa{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-texto-primario);
+    cursor: pointer;
+}
+
+/* Hero */
+.hero{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    overflow:hidden;
+    width: 100%;
+    
+}
+
+.hero-video{
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+} 
+
+.hero-content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.text-left{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+    max-width: 650px;
+    padding: 30px;
+}
+
+.text-left::before{
+     content: "";
+    position: absolute;
+    width: 85%;
+    height: 73%;
+    background-color: rgba(4, 4, 4, 0.4);
+    box-shadow: 0px 10px 20px rgba(202, 242, 255, 0.4);
+    border-radius: 10%;
+    z-index: -1;
+} 
+
+.text-left h1{
+    font-size: 2.5rem;
+    color: var(--color-fondo2);
+    text-transform: uppercase;
+    margin: 15px;
+    
+}
+
+.text-left h2{
+    font-size: 1.25rem;
+    color: var(--color-fondo2);
+    font-weight: 400;
+    margin: 15px;
+}
+
+.btn-hero{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 80px;
+    
+
+}
+
+/* Acerca de mí */
+.about-me{
+    padding: 60px 20px;
+    background-color: var(--color-fondo2);
+}
+
+.contenedor-acercade{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.acerca-img{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.acerca-img::before{
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 280px;
+    background-color: var(--color-primario);
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    box-shadow: 0px 15px 40px;
+}
+
+.acerca-img img{
+    position: relative;
+    z-index: 2;
+    max-width: 190px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content-rigth{
+    flex: 2;
+}
+
+.content-rigth h2{
+    font-size: 2rem;
+    color: var(--color-texto-primario);
+    margin-bottom: 8px;
+}
+
+.content-rigth h3{
+    font-size: 1.2rem;
+    color: var(--color-texto-secundario);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.content-rigth p{
+    color: var(--color-texto-primario);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.btn-acercade{
+    margin-top: 20px;
+    display: flex;
+    gap: 14px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-primary{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.btn-primary:hover{
+    background-color: var(--color-hover);
+    color: var(--color-texto-secundario);
+}
+
+.btn-secondary{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.btn-secondary:hover{
+    background-color: var(--color-hover);
+    color: var(--color-texto-secundario);
+}
+
+/* Sección Skills */
+.skill-section{
+    padding: 80px 20px;
+    background-color: var(--color-2);
+    color: var(--color-fondo2);
+}
+
+.skill-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-skills{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-transform: 50px;
+    letter-spacing: 1px;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-card{
+    background: var(--color-fondo1);
+    border: 1px solido var(--color-hover);
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3 ease;
+}
+
+.skill-card:hover{
+    transform: translateY(-5px);
+    border-color:var(--color-texto-primario);
+}
+
+.skill-card h3{
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-primario);
+}
+
+.skill-item{
+    margin-bottom: 15px;
+}
+
+.skill-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress{
+    height: 100%;
+    width: var(--porcentaje);
+    background: linear-gradient(90deg, #3f6576, #CCD0CF);
+    border-radius: 10px;
+    transition: width 1s ease-in-out, filter 0.3s ease;
+}
+
+.skill-card:hover .progress{
+    box-shadow: 0 0 10px var(--color-texto-primario);
+    filter: brightness(1.2);
+}
+
+/*Efecto parallax*/
+.parallax-banner{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-parallax{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    background-image: url(assets/imgs/banner-proyectos.png);
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    z-index: -1;
+}
+
+.parallax-title{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(112, 111, 111, 0.146);
+    padding: 20px 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(52, 69, 77, 0.168);
+}
+
+.parallax-title h2{
+    font-size: 2.2rem;
+    color: var(--color-texto-primario);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-section{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.project-section.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.projects-section{
+    background-color: var(--color-1);
+    padding: 20px 80px;
+}
+
+.project.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-project{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-transform: 50px;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card{
+    background: var(--color-fondo1);
+    border: 1px solido var(--color-hover);
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.3s ease, border-color 0.3 ease;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    border-color:var(--color-texto-primario);
+}
+
+.project-card h3{
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-primario);
+    text-align: center;
+}
+
+.project-item{
+    margin-bottom: 15px;
+}
+
+.project-info{
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.etiqueta-project{
+    display: grid;
+    justify-content: column;
+    line-height: 30px;
+    z-index: 2;
+
+}
+
+.etiqueta-project::before{
+     content: "";
+    position: absolute;
+    width: 70%;
+    height: 33%;
+    background-color: rgba(4, 4, 4, 0.141);
+    box-shadow: 0px 10px 20px rgba(202, 242, 255, 0.4);
+    border-radius: 15%;
+    backdrop-filter: blur(5px);
+    z-index: -1px;
+    
+
+}
+
+
+/*Estilos para celular*/
+ @media (max-width: 768px){
+
+    .hamburguesa{
+        display: block;
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-fondo2);
+        padding: 1rem;
+        box-shadow: 0 4px 6px;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nav.active{
+        display: block;
+    }
+
+    .contenedor-acercade{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .acerca-img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .acerca-img::before{
+        max-width: 210px;
+        height: 270px;
+    }
+
+    .text-left{
+        max-width: 100px;
+        margin: 0 20px;
+        padding: 24px;
+    }
+
+    .text-left::before{
+        width: 325%;
+        height: 70%;
+        top: 0;
+        left: 0;
+        border-radius: 16px;
+    }
+
+    .content-rigth h2{
+        font-size: 1.75rem;
+    }
+
+    .content-rigth h3{
+        font-size: 1.1rem;
+    }
+
+    .content-rigth p{
+        font-size: 0.95rem;
+    }
+
+    .btn-acercade{
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .text-left h1{
+        font-size: 1.75rem;
+        margin: 0 0 10px 0;
+        line-height: 1.2;
+    }
+
+    .text-left h2{
+        font-size: 1.4rem;
+        margin: 0 0 10px 0;
+        line-height: 1.2;
+    }
+
+    .btn-hero{
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-hero .btn{
+        width: 200%;
+        text-align: center;
+    }
+
+    .hero-video{
+        object-position: 59%;
+    }
+
+    .parallax-banner{
+        height: 100vh;
+    }
+
+    .parallax-title h2{
+        font-size: 1.4rem;
+    }
+
+}
+
+
+

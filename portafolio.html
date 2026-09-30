@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio Kevin</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="assets/imgs/logo.png" alt="mi-imagen">
+            <h1>Mi Portafolio</h1>
+        </div>
+
+        <!--Boton hamburguesa para mobile-->
+        <button class="hamburguesa" id="hamburguesa" aria-label="abrir menu">&#9776;
+        </button>
+        <nav class="nav" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#">Acerca de mi</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <!--Hero-->
+        <section class="hero">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="assets/video/hero-kevin.mp4" type="video/mp4">Tu navegador no soporta videos en HTML5
+            </video>
+            <div class="hero-content">
+
+            <!--contenido parte izquierda-->
+                <div class="text-left">
+                    <h1>Diseño web con visión
+                        cinematográfica: <br> la precisión del <br>detalle en cada movimiento
+                    </h1>
+
+                    <h2>Transformando ideas en <br>experiencias visuales e inmersivas</h2>
+
+                    <!-- Botones CTA -->
+                     <div class="btn-hero">
+                        <a href="" class="btn btn-primary">Ver proyectos</a>
+                        <a href="" class="btn btn-secondary">Descargar CV</a>
+                    </div>
+                     
+                </div>
+            </div>
+        
+        </section>
+
+
+        <!--sección about me-->
+        <section id="acerca-de-mi" class="about-me">
+            <div class="contenedor-acercade">
+                
+                <!--Columna izquierda: imagen-->
+                <div class="acerca-img">
+                    <img src="assets/imgs/ft-perfil.svg" alt="Foto de Kevin Rodriguez">
+                </div>
+            
+                <!--Columna derecha: texto de perfil-->
+                <div class="content-rigth">
+                    <h2>Acerca de mí</h2>
+                    <h3>Técnico en Integración de Contenidos Digitales</h3>
+
+                    <p>
+                        ¡Mucho gusto! Soy <strong>Kevin José Rodriguez Ladino</strong>, un joven apasionado por el desarrollo web y la integración de archivos multimedia. Me formo en el SENA combinando competencias tecnológicas (HTML, CSS, JS, GIT) con una gran disciplina, atención al detalle y enfoque en soluciones eficientes.  
+                    </p>
+
+                    <p>
+                        Me caracterizo por mi capacidad de adaptación a entornos dinamicos, comunicación asertiva y compromiso en el trabajo en equipo, siempre buscando agregar valor tangible a cada proyecto.
+                    </p>
+                    
+                    <!--botones de acción rápida-->
+                    <div class="btn-acercade">
+                        <a href="" class="btn btn-primary">Contáctame</a>
+                        <a href="" class="btn btn-secondary">Descargar CV</a>
+                    </div>
+                </div>    
+
+            </div>
+        </section>
+
+        <!--Sección de skill-->
+        <section id="skills" class="skill-section">
+            <div class="skill-container">
+
+                <h2 class="title-skills">Habilidades y Tecnologias</h2>
+
+                <div class="skills-grid">
+
+                    <!-- Tarjeta 1 -->
+                     <article class="skill-card">
+                        <h3>Desarrollo Web</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Html / Css</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 90%;"></div>
+                            </div>
+                        </div>
+
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 65%;"></div>
+                            </div>
+                        </div>
+
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS Grid & Flexbox</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 70%;"></div>
+                            </div>
+                        </div>
+                     </article>
+
+                      <!-- Tarjeta 2 -->
+                     <article class="skill-card">
+                        <h3>Producción Digital</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Animación & Parallax</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 50%;"></div>
+                            </div>
+                        </div>
+
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Edición de Video</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 70%;"></div>
+                            </div>
+                        </div>
+
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Composición Visual</span>
+                                <span>68%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 70%;"></div>
+                            </div>
+                        </div>
+                     </article>
+
+                      <!-- Tarjeta 3 -->
+                     <article class="skill-card">
+                        <h3>Herramientas</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>VS Code</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 80%;"></div>
+                            </div>
+                        </div>
+
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git / GitHub</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 65%;"></div>
+                            </div>
+                        </div>
+
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Figma</span>
+                                <span>48%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="--porcentaje: 48%;"></div>
+                            </div>
+                        </div>
+                     </article>
+
+                     
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="parallax-projects" class="parallax-banner">
+            <div class="img-parallax" id="parallax-projects-bg"></div>
+            <div class="parallax-title">
+                <h2>Trabajos & Proyectos</h2>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects-section">
+            <div class="project-container">
+                <h2 class="title-project">Proyectos Realizados</h2>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>EcoPouch Web</h3>
+
+                        <div class="project-item">
+                            <video src=""></video>
+                            <div class="project-info">
+                                <p>Web realizada para un emprendimiento de bolsas ecologicas</p>
+                            </div>
+                            <div class="etiqueta-project">
+                                <span>Html5 / JSX</span>
+                                <span>TypeScript</span>
+                                <span>JavaScript (JS/ES6+)</span>
+                                <span>Css3(Mediante Tailwind Css)</span>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Ziro: Mi primera Comunión</h3>
+
+                        <div class="project-item">
+                            <video src=""></video>
+                            <div class="project-info">
+                                <p>Web realizada para mi proyecto sobre una herramienta para mejorar la catequesis</p>
+                            </div>
+                            <div class="etiqueta-project">
+                                <span>Html5 / JSX</span>
+                                <span>TypeScript</span>
+                                <span>JavaScript (JS/ES6+)</span>
+                                <span>Css3(Mediante Tailwind Css)</span>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
