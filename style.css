@@ -318,7 +318,7 @@ body{
 .progress-bar{
     width: 100%;
     height: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -372,7 +372,7 @@ body{
 
 .parallax-title h2{
     font-size: 2.2rem;
-    color: var(--color-texto-primario);
+    color: var(--color-fondo2);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -410,7 +410,7 @@ body{
 .project-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 40px;
 }
 
 .project-card{
@@ -419,11 +419,13 @@ body{
     border-radius: 12px;
     padding: 30px;
     transition: transform 0.3s ease, border-color 0.3 ease;
+    color: var(--color-fondo2);
 }
 
 .project-card:hover{
     transform: translateY(-5px);
     border-color:var(--color-texto-primario);
+    box-shadow: 0px 12px 10px var(--color-hover);
 }
 
 .project-card h3{
@@ -446,28 +448,89 @@ body{
 }
 
 .etiqueta-project{
+    width: 100%;
+    padding: 1rem;
     display: grid;
-    justify-content: column;
-    line-height: 30px;
-    z-index: 2;
-
-}
-
-.etiqueta-project::before{
-     content: "";
-    position: absolute;
-    width: 70%;
-    height: 33%;
-    background-color: rgba(4, 4, 4, 0.141);
-    box-shadow: 0px 10px 20px rgba(202, 242, 255, 0.4);
-    border-radius: 15%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    background: rgba(112, 111, 111, 0.261);
     backdrop-filter: blur(5px);
-    z-index: -1px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 5px var(--color-hover);
+    margin-top: 15px;
     
+}
+
+.etiqueta-project span{
+    margin-bottom: 1px;
+    display: grid;
+    gap: 20px;
+}
+
+.etiqueta-project:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 10px var(--color-hover);
+}
+
+.project-item video{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0px 0px 15px 0px;
+    object-fit: cover;
+    border-radius: 8px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 
 }
 
+.project-item a{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: center;
 
+}
+
+.project-card:hover .progress{
+    box-shadow: 0 0 10px var(--color-texto-primario);
+    filter: brightness(1.2);
+}
+
+.container-foot{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.container-foot h2{
+    font-size: 2rem;    
+    margin: 0px 0px 0px 50px;
+    text-transform: 50px;
+    letter-spacing: 1px;
+}
+
+.container-foot p{
+    padding: 0px 0px 0px 50px;
+    margin-top: 15px;
+}
+
+.contactos-links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.btn-contacto{
+    text-decoration: none;
+    
+    
+}
+
+.icon{
+    width: 5%;
+    height: 5%;
+    
+}
 /*Estilos para celular*/
  @media (max-width: 768px){
 
