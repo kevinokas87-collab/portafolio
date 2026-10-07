@@ -1,339 +1,353 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Kevin José Rodriguez Ladino: desarrollo web e integración de contenidos digitales.">
+    <title>Portafolio Kevin</title>
+
+    <link rel="icon" href="assets/imgs/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portafolio Kevin</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="assets/imgs/logo.png" alt="mi-imagen">
-            <h1>Mi Portafolio</h1>
-        </div>
+        <a href="#inicio" class="logo">
+            <img src="assets/imgs/logo.png" alt="Logo de Kevin">
+            <span>Mi Portafolio</span>
+        </a>
 
-        <!--Boton hamburguesa para mobile-->
-        <button class="hamburguesa" id="hamburguesa" aria-label="abrir menu">&#9776;
+        <!-- Botón hamburguesa para móvil -->
+        <button class="hamburguesa" id="hamburguesa" type="button"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+            <span class="hamburguesa-icono" aria-hidden="true">&#9776;</span>
         </button>
-        <nav class="nav" id="nav-menu">
-            <ul class="nav-list">
-                <li><a href="#">Acerca de mi</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
 
+        <nav class="nav" id="nav-menu" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
 
-
-        <!--Hero-->
-        <section class="hero">
-            <video autoplay loop muted playsinline class="hero-video">
-                <source src="assets/video/hero-kevin.mp4" type="video/mp4">Tu navegador no soporta videos en HTML5
+        <!-- Hero -->
+        <section id="inicio" class="hero">
+            <video autoplay loop muted playsinline class="hero-video" aria-hidden="true">
+                <source src="assets/video/hero-kevin.mp4" type="video/mp4">
+                Tu navegador no soporta videos en HTML5
             </video>
+
             <div class="hero-content">
-
-            <!--contenido parte izquierda-->
                 <div class="text-left">
-                    <h1>Diseño web con visión
-                        cinematográfica: <br> la precisión del <br>detalle en cada movimiento
-                    </h1>
+                    <h1>Diseño web con visión cinematográfica: la precisión del detalle en cada movimiento</h1>
 
-                    <h2>Transformando ideas en <br>experiencias visuales e inmersivas</h2>
+                    <p class="hero-subtitle">Transformando ideas en experiencias visuales e inmersivas</p>
 
                     <!-- Botones CTA -->
-                     <div class="btn-hero">
-                        <a href="" class="btn btn-primary">Ver proyectos</a>
-                        <a href="" class="btn btn-secondary">Descargar CV</a>
+                    <div class="btn-hero">
+                        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                        <a href="assets/docs/cv-kevin-rodriguez.pdf" download class="btn btn-secondary">Descargar CV</a>
                     </div>
-                     
                 </div>
             </div>
-        
         </section>
 
-
-        <!--sección about me-->
-        <section id="acerca-de-mi" class="about-me">
+        <!-- Sección acerca de mí -->
+        <section id="acerca-de-mi" class="about-me" aria-labelledby="titulo-acerca">
             <div class="contenedor-acercade">
-                
-                <!--Columna izquierda: imagen-->
+
+                <!-- Columna izquierda: imagen -->
                 <div class="acerca-img">
-                    <img src="assets/imgs/ft-perfil.svg" alt="Foto de Kevin Rodriguez">
+                    <img src="assets/imgs/ft-perfil.svg" alt="Foto de perfil de Kevin José Rodriguez">
                 </div>
-            
-                <!--Columna derecha: texto de perfil-->
-                <div class="content-rigth">
-                    <h2>Acerca de mí</h2>
-                    <h3>Técnico en Integración de Contenidos Digitales</h3>
+
+                <!-- Columna derecha: texto de perfil -->
+                <div class="content-right">
+                    <h2 id="titulo-acerca">Acerca de mí</h2>
+                    <p class="cargo">Técnico en Integración de Contenidos Digitales</p>
 
                     <p>
-                        ¡Mucho gusto! Soy <strong>Kevin José Rodriguez Ladino</strong>, un joven apasionado por el desarrollo web y la integración de archivos multimedia. Me formo en el SENA combinando competencias tecnológicas (HTML, CSS, JS, GIT) con una gran disciplina, atención al detalle y enfoque en soluciones eficientes.  
+                        ¡Mucho gusto! Soy <strong>Kevin José Rodriguez Ladino</strong>, un joven apasionado por el desarrollo web y la integración de archivos multimedia. Me formo en el SENA combinando competencias tecnológicas (HTML, CSS, JS, Git) con una gran disciplina, atención al detalle y enfoque en soluciones eficientes.
                     </p>
 
                     <p>
-                        Me caracterizo por mi capacidad de adaptación a entornos dinamicos, comunicación asertiva y compromiso en el trabajo en equipo, siempre buscando agregar valor tangible a cada proyecto.
+                        Me caracterizo por mi capacidad de adaptación a entornos dinámicos, comunicación asertiva y compromiso en el trabajo en equipo, siempre buscando agregar valor tangible a cada proyecto.
                     </p>
-                    
-                    <!--botones de acción rápida-->
+
+                    <!-- Botones de acción rápida -->
                     <div class="btn-acercade">
-                        <a href="" class="btn btn-primary">Contáctame</a>
-                        <a href="" class="btn btn-secondary">Descargar CV</a>
+                        <a href="https://wa.me/573019698792" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Contáctame</a>
+                        <a href="assets/docs/cv-kevin-rodriguez.pdf" download class="btn btn-secondary">Descargar CV</a>
                     </div>
-                </div>    
+                </div>
 
             </div>
         </section>
 
-        <!--Sección de skill-->
-        <section id="skills" class="skill-section">
+        <!-- Sección de habilidades -->
+        <section id="skills" class="skill-section" aria-labelledby="titulo-skills">
             <div class="skill-container">
 
-                <h2 class="title-skills">Habilidades y Tecnologias</h2>
+                <h2 id="titulo-skills" class="title-skills">Habilidades y Tecnologías</h2>
 
                 <div class="skills-grid">
 
                     <!-- Tarjeta 1 -->
-                     <article class="skill-card">
+                    <article class="skill-card">
                         <h3>Desarrollo Web</h3>
 
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Html / Css</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 90%;"></div>
-                            </div>
-                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML / CSS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="HTML / CSS" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 90%;"></div>
+                                </div>
+                            </li>
 
-                         <div class="skill-item">
-                            <div class="skill-info">
-                                <span>JavaScript</span>
-                                <span>65%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 65%;"></div>
-                            </div>
-                        </div>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="JavaScript" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 65%;"></div>
+                                </div>
+                            </li>
 
-                         <div class="skill-item">
-                            <div class="skill-info">
-                                <span>CSS Grid & Flexbox</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 70%;"></div>
-                            </div>
-                        </div>
-                     </article>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>CSS Grid &amp; Flexbox</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="CSS Grid y Flexbox" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 70%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
 
-                      <!-- Tarjeta 2 -->
-                     <article class="skill-card">
+                    <!-- Tarjeta 2 -->
+                    <article class="skill-card">
                         <h3>Producción Digital</h3>
 
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Animación & Parallax</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 50%;"></div>
-                            </div>
-                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Animación &amp; Parallax</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="Animación y Parallax" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 50%;"></div>
+                                </div>
+                            </li>
 
-                         <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Edición de Video</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 70%;"></div>
-                            </div>
-                        </div>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Edición de Video</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="Edición de Video" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 70%;"></div>
+                                </div>
+                            </li>
 
-                         <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Composición Visual</span>
-                                <span>68%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 70%;"></div>
-                            </div>
-                        </div>
-                     </article>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Composición Visual</span>
+                                    <span>68%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="Composición Visual" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 68%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
 
-                      <!-- Tarjeta 3 -->
-                     <article class="skill-card">
+                    <!-- Tarjeta 3 -->
+                    <article class="skill-card">
                         <h3>Herramientas</h3>
 
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>VS Code</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 80%;"></div>
-                            </div>
-                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>VS Code</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="VS Code" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 80%;"></div>
+                                </div>
+                            </li>
 
-                         <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Git / GitHub</span>
-                                <span>65%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 65%;"></div>
-                            </div>
-                        </div>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git / GitHub</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="Git y GitHub" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 65%;"></div>
+                                </div>
+                            </li>
 
-                         <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Figma</span>
-                                <span>48%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 48%;"></div>
-                            </div>
-                        </div>
-                     </article>
-
-                     
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>Figma</span>
+                                    <span>48%</span>
+                                </div>
+                                <div class="progress-bar" role="progressbar" aria-label="Figma" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress" style="--porcentaje: 48%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
 
                 </div>
             </div>
         </section>
-        
-        <section id="parallax-projects" class="parallax-banner">
-            <div class="img-parallax" id="parallax-projects-bg"></div>
+
+        <!-- Banner parallax -->
+        <section id="parallax-projects" class="parallax-banner" aria-labelledby="titulo-parallax">
+            <div class="img-parallax" id="parallax-projects-bg" aria-hidden="true"></div>
             <div class="parallax-title">
-                <h2>Trabajos & Proyectos</h2>
+                <h2 id="titulo-parallax">Trabajos &amp; Proyectos</h2>
             </div>
         </section>
 
-        <section id="proyectos" class="projects-section">
+        <!-- Proyectos -->
+        <section id="proyectos" class="projects-section" aria-labelledby="titulo-proyectos">
             <div class="project-container">
-                <h2 class="title-project">Proyectos Realizados</h2>
+                <h2 id="titulo-proyectos" class="title-project">Proyectos Realizados</h2>
 
                 <div class="project-grid">
-                    <article id="ziro-img" class="project-card">
+
+                    <article id="eco-web" class="project-card">
                         <h3>EcoPouch Web</h3>
 
                         <div class="project-item">
-                            <video autoplay muted loop playsinline class="eco-web" >
-                                <source src="assets/video/ecopouch-web.mov">
+                            <video autoplay muted loop playsinline aria-label="Vista previa de la página web de EcoPouch">
+                                <source src="assets/video/ecopouch-web.mp4" type="video/mp4">
+                                <source src="assets/video/ecopouch-web.mov" type="video/quicktime">
+                                Tu navegador no soporta videos en HTML5
                             </video>
-                            <div class="project-info">
-                                <p>Web realizada para un emprendimiento de bolsas ecologicas</p>
-                            </div>
-                            <div class="etiqueta-project">
-                                <span>Html5 / JSX</span>
-                                <span>20%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 20%;"></div>
-                            </div>
-                            </div>
-                             <div class="etiqueta-project">
-                                <span>TypeScript</span>
-                                <span>25%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 25%;"></div>
-                            </div>
-                            </div>
-                            <div class="etiqueta-project">
-                                <span>JavaScript (JS/ES6+)</span>
-                                <span>20%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 20%;"></div>
-                            </div>
-                            </div>
-                            <div class="etiqueta-project">
-                                <span>CSS3(Mediante Tailwind Css)</span>
-                                <span>35%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 40%;"></div>
-                            </div>
+
+                            <p class="project-info">Web realizada para un emprendimiento de bolsas ecológicas</p>
+
+                            <ul class="project-stack">
+                                <li class="etiqueta-project">
+                                    <span>HTML5 / JSX</span>
+                                    <span>20%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="HTML5 / JSX" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 20%;"></div>
+                                    </div>
+                                </li>
+                                <li class="etiqueta-project">
+                                    <span>TypeScript</span>
+                                    <span>25%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="TypeScript" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 25%;"></div>
+                                    </div>
+                                </li>
+                                <li class="etiqueta-project">
+                                    <span>JavaScript (JS/ES6+)</span>
+                                    <span>20%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="JavaScript" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 20%;"></div>
+                                    </div>
+                                </li>
+                                <li class="etiqueta-project">
+                                    <span>CSS3 (mediante Tailwind CSS)</span>
+                                    <span>35%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="CSS3 con Tailwind CSS" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 35%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
 
-                        <a href="https://ecopouch-web.netlify.app/" target="_blank" class="btn btn-primary">Ver Página Web</a>
+                        <a href="https://ecopouch-web.netlify.app/" target="_blank" rel="noopener noreferrer"
+                           class="btn btn-primary" aria-label="Ver página web de EcoPouch (se abre en una pestaña nueva)">Ver Página Web</a>
                     </article>
 
-                    <article class="project-card">
+                    <article id="ziro-web" class="project-card">
                         <h3>Ziro: Mi primera Comunión</h3>
 
                         <div class="project-item">
-                            <video autoplay muted loop playsinline class="ziro-web" >
-                                <source src="assets/video/ziro-web.mov">
+                            <video autoplay muted loop playsinline aria-label="Vista previa de la página web de Ziro">
+                                <source src="assets/video/ziro-web.mp4" type="video/mp4">
+                                <source src="assets/video/ziro-web.mov" type="video/quicktime">
+                                Tu navegador no soporta videos en HTML5
                             </video>
-                            <div class="project-info">
-                                <p>Web realizada para mi proyecto sobre una herramienta para mejorar la catequesis</p>
-                            </div>
-                            <div class="etiqueta-project">
-                                <span>Html5 / JSX</span>
-                                <span>20%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 20%;"></div>
-                            </div>
-                            </div>
-                             <div class="etiqueta-project">
-                                <span>TypeScript</span>
-                                <span>25%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 25%;"></div>
-                            </div>
-                            </div>
-                            <div class="etiqueta-project">
-                                <span>JavaScript (JS/ES6+)</span>
-                                <span>20%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 20%;"></div>
 
-                            </div>
-                            </div>
+                            <p class="project-info">Web realizada para mi proyecto sobre una herramienta para mejorar la catequesis</p>
 
-                            <div class="etiqueta-project">
-                                <span>CSS3(Mediante Tailwind Css)</span>
-                                <span>35%</span>
-                                <div class="progress-bar">
-                                <div class="progress" style="--porcentaje: 35%;"></div>
-                            </div>
-                            </div>
+                            <ul class="project-stack">
+                                <li class="etiqueta-project">
+                                    <span>HTML5 / JSX</span>
+                                    <span>20%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="HTML5 / JSX" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 20%;"></div>
+                                    </div>
+                                </li>
+                                <li class="etiqueta-project">
+                                    <span>TypeScript</span>
+                                    <span>25%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="TypeScript" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 25%;"></div>
+                                    </div>
+                                </li>
+                                <li class="etiqueta-project">
+                                    <span>JavaScript (JS/ES6+)</span>
+                                    <span>20%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="JavaScript" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 20%;"></div>
+                                    </div>
+                                </li>
+                                <li class="etiqueta-project">
+                                    <span>CSS3 (mediante Tailwind CSS)</span>
+                                    <span>35%</span>
+                                    <div class="progress-bar" role="progressbar" aria-label="CSS3 con Tailwind CSS" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" style="--porcentaje: 35%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-                            <a href="https://web-ziro.netlify.app/" target="_blank" class="btn btn-secondary">Ver Página Web</a>
+                        <a href="https://web-ziro.netlify.app/" target="_blank" rel="noopener noreferrer"
+                           class="btn btn-secondary" aria-label="Ver página web de Ziro (se abre en una pestaña nueva)">Ver Página Web</a>
                     </article>
-
 
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer id="contacto" class="site-footer">
         <div class="container-foot">
             <h2>¿Trabajamos juntos?</h2>
-            <p>Estoy disponible para nuevos proyectos y colaboraciones cinematográficas</p>
+            <p class="text-foot">Estoy disponible para nuevos proyectos y colaboraciones cinematográficas</p>
 
-            <!--Enlaces directos-->
-            <div class="contacto-links">
-                <a href="kevinjoserodriguez@gmail.com" target="_blank" class="btn-contacto">Correo <img src="assets/imgs/email.svg" alt="📪" class="icon"></a>
-                <a href="https://wa.me/573019698792" target="_blank" class="btn-contacto">Whatsapp <img src="assets/imgs/WhatsApp.svg" alt="icono de WhatsApp" class="icon"></a>
-                <a href="https://github.com/kevinokas87-collab" target="_blank" class="btn-contacto">GitHub <img src="assets/imgs/github.svg" alt="Github icono" class="icon"></a>
-            </div>
+            <!-- Enlaces directos de contacto -->
+            <address class="contacto-links">
+                <a href="mailto:kevinjoserodriguez@gmail.com" class="btn-contacto">Correo <img src="assets/imgs/email.svg" alt="" class="icon"></a>
+                <a href="https://wa.me/573019698792" target="_blank" rel="noopener noreferrer" class="btn-contacto">WhatsApp <img src="assets/imgs/WhatsApp.svg" alt="" class="icon"></a>
+                <a href="https://github.com/kevinokas87-collab" target="_blank" rel="noopener noreferrer" class="btn-contacto">GitHub <img src="assets/imgs/github.svg" alt="" class="icon"></a>
+            </address>
 
             <div class="foot-credits">
-                <p>&copy; 2026 Kevin José Rodriguez. Todos los derechos reservados.</p>
-
+                <p><small>&copy; 2026 Kevin José Rodriguez. Todos los derechos reservados.</small></p>
             </div>
         </div>
     </footer>
 
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
